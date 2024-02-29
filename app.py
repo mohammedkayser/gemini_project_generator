@@ -19,10 +19,10 @@ st.title("Data Project Generator")
 st.write("Generate project ideas and guidelines for data-related roles.")
 
 # User input
-job_title = st.text_input("Enter your job title (e.g., data analyst, data scientist, data engineer):")
-tools = st.text_input("Enter tools for projects (comma-separated, e.g., Python, R, Excel, PowerBI):")
-technique = st.text_input("Enter a technique to showcase:")
-industry = st.text_input("Enter an industry for projects:")
+job_title = st.text_input("Enter your Target job title (e.g., data analyst, data scientist, data engineer etc..):")
+tools = st.text_input("Enter tools for projects (e.g., Python, R, Excel, PowerBI etc..):")
+technique = st.text_input("Enter a technique to showcase (e.g., EDA , ML , Vizualisation , Forecasting etc..)")
+industry = st.text_input("Enter an industry for projects(e.g., E-Commerce , Retail , Finance , Healthcare etc..)")
 
 # Button to generate project ideas
 if st.button("Generate Project Ideas"):
@@ -51,6 +51,4 @@ if st.button("Generate Detailed Explanation"):
         # Display the detailed explanation
         st.write(explanation_response.text)
     else:
-        st.warning("Please select a project first.")
-
-
+        st.warning("Please select a project first.")   
